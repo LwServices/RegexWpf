@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+	  <WarningsAsErrors>nullable</WarningsAsErrors>
+	  <Copyright>Copyright © $([System.DateTime]::Now.Year) LwServices ($([System.DateTime]::Now.ToString("G")))</Copyright>
+	  <Optimize>false</Optimize>
+	  <ApplicationIcon>find.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="find.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.8.0" />
+    <PackageReference Include="SonarAnalyzer.CSharp" Version="9.12.0.78982">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
